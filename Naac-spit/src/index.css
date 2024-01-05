@@ -76,12 +76,12 @@ header {
 
 /* button css dont touch */
 .aws-btn {
-  --button-default-height: 50px;
-  --button-default-font-size: 30px;
-  --button-default-border-radius: 10px;
-  --button-horizontal-padding: 50px;
-  --button-raise-level: 5px;
-  --button-hover-pressure: 2;
+  --button-default-height: 44px;
+  --button-default-font-size: 22px;
+  --button-default-border-radius: 4px;
+  --button-horizontal-padding: 17px;
+  --button-raise-level: 4px;
+  --button-hover-pressure: 1;
   --transform-speed: 0.15s;
   --button-danger-color: #c42e2e;
   --button-danger-color-dark: #861f1f;
@@ -102,37 +102,3 @@ header {
   padding-top: 20px;
 }
 
-/* footer section */
-footer {
-  background-color: #333;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 32px 80px 16px;
-}
-
-.icons {
-  color: #333;
-  font-size: 2.4rem;
-  position: relative;
-  cursor: pointer;
-}
-
-.footer-head-socials{
-  background-color: var(--color-white);
-  border-radius: 5px;
-  color: #333;
-  cursor: pointer;
-  font-size: 2rem;
-  margin-left: 1rem;
-  padding: 1rem;
-}
-
-.footer-head-logo{
-  height: 80px;
-}
-
-.footer-head {
-  align-items: center;
-  display: flex;
-  width: 100%;
-}

@@ -4,22 +4,24 @@ import '../assets/clg-logo.png';
 const undertaking_pdf='http://localhost:5173/dummy.pdf'
 
 function Header() {
-  const downloadPDF = (url) => {
-    fetch(url)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const blobURL = window.URL.createObjectURL(blob);
-        const fileName = url.split('/').pop();
-        const aTag = document.createElement('a');
-        aTag.href = blobURL;
-        aTag.setAttribute('download', fileName);
-        document.body.appendChild(aTag);
-        aTag.click();
-        document.body.removeChild(aTag);  // Remove the created anchor tag after the click
-      })
-      .catch((error) => {
-        console.error('Error downloading PDF:', error);
-      });
+  // const downloadPDF = (url) => {
+  //   fetch(url)
+  //     .then((response) => response.blob())
+  //     .then((blob) => {
+  //       const blobURL = window.URL.createObjectURL(blob);
+  //       const fileName = url.split('/').pop();
+  //       const aTag = document.createElement('a');
+  //       aTag.href = blobURL;
+  //       aTag.setAttribute('download', fileName);
+  //       document.body.appendChild(aTag);
+  //       aTag.click();
+  //       document.body.removeChild(aTag);  // Remove the created anchor tag after the click
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error downloading PDF:', error);
+  //     });
+   const openPDF = (url) => {
+    window.open(url, '_blank');
   };
     return (
       <header>
@@ -39,11 +41,11 @@ function Header() {
             </li>
             <li><a className='menu-items' href="#">Faculty</a></li>
             
-            <li><a className='menu-items' onClick={() => downloadPDF(undertaking_pdf)}>Undertaking</a></li>
+            <li><a className='menu-items' onClick={() => openPDF(undertaking_pdf)}>Undertaking</a></li>
           </ul>
           </section>
         </nav>
       </header>
     );
 };
-  export default Header;
+  export default Header;  
