@@ -1,128 +1,7 @@
-/* Footer Styles
-#footer {
-  padding: 32px 80px 16px;
-  background-color:rgba(2, 29, 79, 0.957);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 10;
-}
-
-#footer-head {
-  width: 100%;
-  height: max-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 25px;
-  border-bottom: 2px solid white;
-}
-
-#footer-head-logo > img {
-  height: 100px;
-}
-
-#footer-head-socials {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.icons {
-  font-size: 4rem;
-  padding: 10px;
-  color: #333;
-  border-radius: 5px;
-  margin-left: 1rem;
-  cursor: pointer;
-}
-
-.icon {
-  margin-right: 2px;
-}
-
-#footer-main {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.footer-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-links {
-  margin-top: 4rem;
-}
-
-#footer-info-left {
-  margin-top: 2rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  color: white;
-}
-
-#footer-info-title {
-  font-size: 28px;
-  padding-bottom: 5px;
-  font-weight: 700;
-  color: white;
-}
-
-#footer-college-title {
-  font-size: 24px;
-  padding-bottom: 5px;
-  font-weight: 600;
-}
-
-.footer-info-content {
-  padding-bottom: 5px;
-  font-size: 17px;
-  color: white;
-}
-
-.footer-info-content2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#footer-info-right {
-  margin-top: 2rem;
-}
-
-#block {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  background: white;
-  color: #333;
-  margin: 3px;
-  width: 35px;
-  height: 35px;
-  font-size: 25px;
-  text-align: center;
-  font-weight: 800;
-  border-radius: 5px;
-}
-
-#footer-copyright {
-  color: white;
-  margin-top: 2rem;
-  font-size: 17px;
-} */
-
-
+/* Footer Styles */
 #footer{
   padding: 32px 80px 16px;
-  background-color: rgba(2, 29, 79, 0.957);
+  background-color: var(--color-primary);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -153,7 +32,7 @@
 
 #footer-head-socials > i{
   font-size: 2rem;
-  color: rgba(2, 29, 79, 0.957);
+  color: var(--color-primary);
   background-color: var(--color-white);
   border-radius: 5px;
   padding: 1rem;
@@ -194,23 +73,23 @@
   font-size: 17px;
 }
 
+.footer-info-content2 {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.icon {
+  margin-right: 5px; /* Add some margin for spacing between icon and text */
+}
+.icons {
+  font-size: 30px; /* Adjust the font-size as needed */
+  color: #ffffff; /* Set the color as needed */
+  margin-right: 10px; /* Add margin for spacing between icons */
+}
+
+
 #footer-info-right {
   margin-top: 2rem;
-}
-
-.visitorsContainer {
-  display: inline-block;
-}
-
-.visitors {
-  padding: 5px;
-  display: flex;
-  align-items: center;
-}
-
-.visitorsHeading {
-  color: #FFFFFF;
-  font-size: 1.5rem;
 }
 
 #block {
@@ -219,7 +98,7 @@
   align-items: center;
   padding: 5px;
   background: var(--color-white);
-  color: rgba(2, 29, 79, 0.957);
+  color: var(--color-primary);
   margin: 3px;
   width: 35px;
   height: 35px;
@@ -268,11 +147,6 @@
 
   #footer-info-right {
     margin-top: 1rem;
-  }
-
-  .visitorsHeading {
-    font-size: 1.2rem;
-    margin-right: 5px;
   }
 
   #block {

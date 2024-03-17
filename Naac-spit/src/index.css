@@ -9,7 +9,7 @@
   width: 100%; /* Full width */
 }
 .anime1 {
-  background: url("./assets/College.jpg");
+  background-color: rgba(2, 29, 79, 0.957) ;
   background-size: cover;
   background-position: center; /* Set your desired height */
   width: 100%; /* Full width */
@@ -25,7 +25,7 @@
 html,body{
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: rgba(2, 29, 79, 0.957);
 }
 ::selection{
   color: white;
@@ -38,10 +38,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top:10px;
-  padding-left: S10px;
+  padding-top: 10px;
+  padding-left: 10px; /* Corrected typo here */
 }
-
 .image {
   max-width: 100px;
   margin-right:1000px;
@@ -94,34 +93,34 @@ header {
   .anime {
     height: 100rem;
     width: 100%; 
+    background: white;
   }
   .hello{
-    width: 80%; 
+    width: 80%;
+    height: 52rem;
+    margin-top: 20rem;
   }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
-/* Mobile */
+/* Mobile
 @media (max-width: 480px) {
   .anime {
     height: 100rem;
-    width: 480px;
+    width: auto;
+
   }
   .hello{
-    width: 470px; 
-  }
-}
-.bye {
+    width: 470px;
+    height: 52rem; 
+    margin-top: 20rem;
 
-  @media screen and (max-width: 480px) {
-    font-size: 1.5rem; 
   }
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    font-size: 1.8rem; 
-  }
-}
-.dhayanvad{
-  @media screen and (min-width: 481px) and (max-width: 1000px) {
-   width: 100%;
-  }
-}
+  .button-container {
+    width: 50%; /* Each button takes 50% of the width, creating a 2-column layout */
+  /* } */
+/* } */

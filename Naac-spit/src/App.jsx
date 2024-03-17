@@ -39,13 +39,13 @@ function App() {
 
   return (
     <>
-      <div className='z-10 anime1'>
+      <div className='w-full z-10 anime1'>
         <Navbar/>
       </div>
-      <div className='w-full anime h-[45rem]'>
-        <motion.div className="flex gap-3 justify-center align-center">
+      <div className='md:w-full md:w-[5rem] anime h-[45rem]'>
+        <motion.div className="flex-container flex-wrap flex gap-3 justify-center align-center">
           {Btns.map((button, index) => (
-            <div className='' key={index}>
+            <div className='button-container' key={index}>
               <Buttons Btn={button.label} component={button.component} renderComponent={renderComponent} />
             </div>
           ))}

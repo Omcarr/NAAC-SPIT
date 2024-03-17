@@ -13,7 +13,7 @@ const ExpandableComponent = ({ mainContent, links, isOpen, openBar }) => {
     <motion.div>
       <button
         onClick={openBar}
-        className="w-[23rem] h-[3rem] p-2 shadow-md text-white bg-blue-900 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75"
+        className="md:w-[23rem] w-[12rem] h-[3rem] p-2 shadow-md text-white bg-blue-900 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75"
       >
         <div className='flex justify-between'>
           <div className='mt-1 text-[1rem] font-bold'>{mainContent}</div> 
@@ -29,7 +29,7 @@ const ExpandableComponent = ({ mainContent, links, isOpen, openBar }) => {
         animate={controls}
       >
         {isOpen && (
-          <div className=" w-[23rem] bg-sky-700 p-4">
+          <div className="md:w-[23rem] w-[12rem] bg-sky-700 p-4">
             {links.map(({ name, pdf }, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: index * 0.1 }}>
                 <a className='flex ml-3 gap-1 transform hover:scale-x-110 transition-transform duration-300 ease-in-out' href={pdf} target="_blank" rel="noopener noreferrer">

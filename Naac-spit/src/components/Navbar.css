@@ -4,11 +4,12 @@ nav {
   width: 100%;
   padding: 10px 0px;
   top: 0px;
-  background:rgba(2, 29, 79, 0.957);
+  background: rgba(2, 29, 79, 0.957);
 }
 nav .wrapper {
   position: relative;
-  max-width: 1300px;
+  /* max-width: 1300px; */
+  max-width: 100%;
   padding: 0px 30px;
   height: 70px;
   line-height: 70px;
@@ -54,7 +55,7 @@ nav .wrapper {
 }
 .nav-links .drop-menu {
   position: absolute;
-  background:rgba(2, 29, 79, 0.957);
+  background: rgba(2, 29, 79, 0.957);
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -86,7 +87,7 @@ nav .wrapper {
   visibility: hidden;
 }
 .mega-box .content {
-  background:rgba(2, 29, 79, 0.957);
+  background: rgba(2, 29, 79, 0.957);
   padding: 25px 20px;
   display: flex;
   width: 100%;
@@ -137,6 +138,10 @@ nav .wrapper {
 }
 
 @media screen and (max-width: 970px) {
+  .wrapper{
+    width:100%;
+  }
+
   .wrapper .btn {
     display: block;
   }
@@ -155,7 +160,6 @@ nav .wrapper {
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
     transition: all 0.3s ease;
   }
-  custom scroll bar
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -221,6 +225,12 @@ nav .wrapper {
     border-radius: 5px;
     font-size: 18px;
   }
+
+  .library-link {
+    border-radius: 0px;
+    font-size: 20px;
+  }
+
   .mega-box {
     position: static;
     top: 65px;
@@ -248,7 +258,6 @@ nav .wrapper {
   .content .row .mega-links {
     border-left: 0px;
     padding-left: 15px;
-    
   }
   .row .mega-links li {
     margin: 0;
@@ -257,6 +266,17 @@ nav .wrapper {
     font-size: 19px;
   }
 }
+
+@media screen and (max-width: 660px) {
+  .wrapper{
+    width:100%;
+  }
+
+  .spit-logo {
+    display: none;
+  }
+}
+
 nav input {
   display: none;
 }
@@ -274,6 +294,6 @@ nav input {
   font-size: 45px;
   font-weight: 600;
 }
-.abcd{
-  background:rgba(2, 29, 79, 0.957) ;
-} 
+.abcd {
+  background: rgba(2, 29, 79, 0.957);
+}
