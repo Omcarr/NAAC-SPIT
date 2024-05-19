@@ -5,7 +5,7 @@ import college from "../assets/clg bg 2.jpeg";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const undertaking_pdf = "http://localhost:5173/Undertaking.pdf";
+const undertaking_pdf = "Undertaking.pdf";
 
 const Navbar = () => {
   const openPDF = (url) => {

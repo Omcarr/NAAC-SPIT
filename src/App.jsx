@@ -10,6 +10,7 @@ import CriteriaPage4 from './pages/CriteriaPage4';
 import CriteriaPage5 from './pages/CriteriaPage5';
 import CriteriaPage6 from './pages/CriteriaPage6';
 import CriteriaPage7 from './pages/CriteriaPage7';
+import DVV from './pages/DVV'
 import Ssr from './pages/Ssr';
 import gsap from "gsap"; 
 import { useGSAP } from "@gsap/react";
@@ -28,6 +29,7 @@ function App() {
     { label: "CRITERIA 6", component: <CriteriaPage6 /> },
     { label: "CRITERIA 7", component: <CriteriaPage7 /> },
     { label: "SSR", component: <Ssr /> },
+    { label: "DVV Clarifications", component: <DVV /> },
   ];
 
   // Set the default component here
