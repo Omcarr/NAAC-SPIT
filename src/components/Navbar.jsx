@@ -224,11 +224,11 @@ const Navbar = () => {
               Undertaking
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="row" href="#">
               Login
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

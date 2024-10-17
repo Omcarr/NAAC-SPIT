@@ -6,7 +6,7 @@ function CriteriaPage() {
 
     mainContent: "SSR",
     linkNames: [
-      { name: "SSR", pdf: "#" },
+      { name: "SSR", pdf: "SSR/S.P.I.T._NAAC_SSR_Cycle_1.pdf" },
     ]
   },
 ];
