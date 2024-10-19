@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./footer.css";
+import "./Footer.css";
 import logo from "../assets/spit-transparent-bg-logo.png";
 import {
   FaEnvelopeSquare,
